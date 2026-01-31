@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Quiz App</h1>
+    <section id="quiz" class="card" aria-live="polite">
+      <div id="progress" class="progress">Question <span id="current">1</span>/<span id="total">0</span></div>
+      <h2 id="question" class="question"></h2>
+      <form id="options" class="options" role="radiogroup" aria-label="Quiz options"></form>
+      <div class="actions">
+        <button id="nextBtn" class="btn" type="button">Next</button>
+        <button id="restartBtn" class="btn btn-secondary" type="button" hidden>Restart</button>
+      </div>
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+      <p id="result" class="result" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="questions.js"></script>
+  <script src="quizCore.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
